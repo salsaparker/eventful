@@ -8,3 +8,8 @@
 * We feature bands and their upcoming shows
 
 * We feature venues and their upcoming events
+
+Steps:
+
+Open a window in your favorite browser
+Type in the url 'localhost:3000'
