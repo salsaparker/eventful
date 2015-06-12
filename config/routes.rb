@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  namespace :users do
+  get 'admin/index'
+  end
+
+  namespace :users do
+  get 'admin/new'
+  end
+
+  namespace :users do
+  get 'admin/show'
+  end
+
+  namespace :users do
+  get 'admin/edit'
+  end
+
   get 'venue/index'
 
   get 'venue/show'
