@@ -4,7 +4,6 @@
 
 === Here's a list of things our app offers
 
-Things you may want to cover:
 
 * We feature bands and their upcoming shows
 
