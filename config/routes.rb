@@ -1,25 +1,16 @@
 Rails.application.routes.draw do
-  namespace :users do
-  get 'admin/index'
+
+  namespace :admin do
+    resources :users
   end
 
-  namespace :users do
-  get 'admin/new'
-  end
 
-  namespace :users do
-  get 'admin/show'
-  end
+  get '/venue' => 'venues#index'
 
-  namespace :users do
-  get 'admin/edit'
-  end
+  get '/venue/:id' => 'venues#show'
 
-  get 'venue/index'
-
-  get 'venue/show'
-
-  get 'venue/new'
+  get 'venue/new' => 'venues#new'
+  post '/venue/new' => 'venues#create'
 
   get 'venue/edit'
 
@@ -31,13 +22,6 @@ Rails.application.routes.draw do
 
   get 'band/edit'
 
-  get 'users/index'
-
-  get 'users/show'
-
-  get 'users/new'
-
-  get 'users/edit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
