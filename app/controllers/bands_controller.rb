@@ -1,7 +1,7 @@
-class BandController < ApplicationController
+class BandsController < ApplicationController
 
   def index
-    
+    @
   end
 
   def show
